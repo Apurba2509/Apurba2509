@@ -19,12 +19,6 @@
 
 ---
 
-## 📊 **Most Used Languages:**
-
-![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Apurba2509&layout=compact&theme=radical)
-
----
-
 ## 📈 **GitHub Stats:**
 
 ![Apurba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=radical)
