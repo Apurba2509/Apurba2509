@@ -1,30 +1,54 @@
-# Hi 👋, I'm Apurba Das  
-**A passionate frontend developer**
+# Hi 👋, I'm Apurba Das
+**A Passionate Frontend Developer**
 
-![Profile Views](https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20views&color=0e75b6&style=flat)
+![Profile Views](https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20views&color=0e75b6&style=flat-square)
 
-## 🛠️ Tech Stack
-**Languages & Tools I Work With:**
-- HTML5 | CSS3 | JavaScript
-- Python | MySQL
-- Git & GitHub
+---
 
-## 🚀 What I’m Up To
-- 🔭 I’m currently building exciting front-end projects.
-- 🌱 Actively improving my skills in **frontend development**.
-- 💬 Feel free to ask me about **HTML**, **CSS**, **JavaScript**, **Python**, or **MySQL**.
+## 🛠 **Languages and Tools:**
 
-## 📊 GitHub Stats
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="40" height="40"/>
+</p>
+
+---
+
+## 📊 **Most Used Languages:**
+
+![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Apurba2509&layout=compact&theme=radical)
+
+---
+
+## 📈 **GitHub Stats:**
+
 ![Apurba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=radical)
 
-## 🏆 Badges
-Here are some badges that represent my GitHub activity:
-- ![Commits](https://badges.pufler.dev/commits/all/Apurba2509) Commits badge
-- ![Pull Requests](https://badges.pufler.dev/pulls/Apurba2509) Pull Requests badge
-- ![Repositories](https://badges.pufler.dev/repos/Apurba2509) Repositories badge
+## 🔥 **GitHub Streak:**
 
-## 🌐 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/apurbadas2509/)
-[![Instagram](https://img.shields.io/badge/-Instagram-orange?style=for-the-badge&logo=instagram)](https://www.instagram.com/___apurbax___/)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Apurba2509&theme=radical)
 
-[![GitHub Badge](https://img.shields.io/badge/-GitHub-black?style=for-the-badge&logo=github)](https://github.com/Apurba2509)
+---
+
+## 🏆 **Badges**
+
+![Commits](https://badges.pufler.dev/commits/all/Apurba2509) 
+![Pull Requests](https://badges.pufler.dev/pulls/Apurba2509)
+![Repositories](https://badges.pufler.dev/repos/Apurba2509)
+
+---
+
+## 💬 **Fun Facts**
+- I'm currently learning **React JS**, **Vite**
+- Ask me about **C**, **PHP**, **JavaScript**, **Java**, **React JS**
+
+---
+
+## 🌐 **Connect with me:**
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/apurbadas2509/)
+[![Instagram](https://img.shields.io/badge/-Instagram-orange?style=flat&logo=instagram)](https://www.instagram.com/___apurbax___/)
