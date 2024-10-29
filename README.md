@@ -44,7 +44,7 @@
 
 ---
 
-## 🌐 **Connect with me:**
+## 🌐 **Connect with me on my onlyfans:**
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/apurbadas2509/)
 [![Instagram](https://img.shields.io/badge/-Instagram-orange?style=flat&logo=instagram)](https://www.instagram.com/___apurbax___/)
