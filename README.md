@@ -34,7 +34,7 @@
 ![Commits](https://badges.pufler.dev/commits/all/Apurba2509) 
 ![Pull Requests](https://badges.pufler.dev/pulls/Apurba2509)
 ![Repositories](https://badges.pufler.dev/repos/Apurba2509)
-"[![An image of @apurba2509's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/apurba2509)](https://holopin.io/@apurba2509)"
+[![An image of @apurba2509's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/apurba2509)](https://holopin.io/@apurba2509)
 
 ---
 
