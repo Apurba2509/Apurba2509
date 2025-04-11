@@ -69,6 +69,9 @@ I'm a passionate frontend developer with expertise in multiple programming langu
   <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14747924">
     <img src="https://cdn.qwiklabs.com/85FpQtPYWKDKFniw6HSrg50FZaqIvN498EjVAo5vhrg%3D" width="100" alt="Arcade Base Camp"/>
   </a>
+  <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14765263">
+    <img src="https://cdn.qwiklabs.com/CJp5LbDWkI%2BxZTaXN9dzCKg4xelVlAUPCy%2Fuf9iA%2Bsg%3D" width="100" alt="Arcade TechCare"/>
+  </a>
 </p>
 
 <p align="center">
