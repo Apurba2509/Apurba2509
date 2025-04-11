@@ -38,6 +38,18 @@
 
 ---
 
+## 🧠 **Google Skills Boost Badges**
+
+| Badge | Skill |
+|-------|-------|
+| [![Week 1](https://cdn.qwiklabs.com/vukJ4zjiASC97e3881VJMyXYdYzvhuqFiTA2FcS9HyE%3D)](https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14534278) | Skills Boost Arcade Trivia April 2025 Week 1 |
+| [![Week 2](https://cdn.qwiklabs.com/GCiiVx8Cy4UjqMk96YY7X6Xq5YaOsFooB9LrTwMr5Rg%3D)](https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14758451) | Skills Boost Arcade Trivia April 2025 Week 2 |
+| [![Base Camp](https://cdn.qwiklabs.com/85FpQtPYWKDKFniw6HSrg50FZaqIvN498EjVAo5vhrg%3D)](https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14747924) | Skills Boost Arcade Base Camp April 2025 |
+
+👉 [View My Full Google Cloud Skills Boost Profile](https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799)
+
+---
+
 ## 💬 **Fun Facts**
 - I'm currently improving my **C**, **PHP**, **JavaScript**, **Java**
 - Ask me about **C**, **PHP**, **JavaScript**, **Java**
