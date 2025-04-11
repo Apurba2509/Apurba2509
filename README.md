@@ -1,79 +1,104 @@
-# Hi 👋, I'm Apurba Das
-**A Passionate Frontend Developer**
+# 👋 Hi, I'm Apurba Das
 
-![Profile Views](https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20views&color=0e75b6&style=flat-square)
+### Frontend Developer | Coding Enthusiast
+
+![Profile Views](https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20views&color=0e75b6&style=flat)
+![GitHub Followers](https://img.shields.io/github/followers/Apurba2509?style=social)
 
 ---
 
-## 🛠 **Languages and Tools:**
+## 🚀 About Me
 
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="40" height="40"/>
+I'm a passionate frontend developer with expertise in multiple programming languages. I love building beautiful, functional interfaces and continuously expanding my technical skills.
+
+- 🔭 Currently improving my **JavaScript, PHP, Java, and C** skills
+- 🌱 Learning more about **modern web development frameworks**
+- 💡 Fun fact: I enjoy solving coding challenges in my free time
+- 📫 How to reach me: 
+  <a href="https://www.linkedin.com/in/apurbadas2509/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="20"/>
+  </a>
+  <a href="https://www.instagram.com/___apurbax___/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" height="20"/>
+  </a>
+
+---
+
+## 🛠 Tech Stack
+
+### Languages
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
+
+### Tools & Platforms
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurba2509&layout=compact&langs_count=8&theme=radical"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Apurba2509&theme=radical" alt="GitHub Streak"/>
 </p>
 
 ---
 
-## 📈 **GitHub Stats:**
+## 🏆 Google Cloud Skills Boost Achievements
 
-![Apurba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=radical)
+<p align="center">
+  <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14534278">
+    <img src="https://cdn.qwiklabs.com/vukJ4zjiASC97e3881VJMyXYdYzvhuqFiTA2FcS9HyE%3D" width="100" alt="Arcade Trivia Week 1"/>
+  </a>
+  <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14758451">
+    <img src="https://cdn.qwiklabs.com/GCiiVx8Cy4UjqMk96YY7X6Xq5YaOsFooB9LrTwMr5Rg%3D" width="100" alt="Arcade Trivia Week 2"/>
+  </a>
+  <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14747924">
+    <img src="https://cdn.qwiklabs.com/85FpQtPYWKDKFniw6HSrg50FZaqIvN498EjVAo5vhrg%3D" width="100" alt="Arcade Base Camp"/>
+  </a>
+</p>
 
-## 🔥 **GitHub Streak:**
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Apurba2509&theme=radical)
-
----
-
-## 🏆 **Badges**
-
-![Commits](https://badges.pufler.dev/commits/all/Apurba2509) 
-![Pull Requests](https://badges.pufler.dev/pulls/Apurba2509)
-![Repositories](https://badges.pufler.dev/repos/Apurba2509)
-[![An image of @apurba2509's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/apurba2509)](https://holopin.io/@apurba2509)
-
----
-
-## 🧠 **Google Skills Boost Badges**
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14534278">
-        <img src="https://cdn.qwiklabs.com/vukJ4zjiASC97e3881VJMyXYdYzvhuqFiTA2FcS9HyE%3D" height="100"/><br/>
-        <sub><b>Arcade Trivia Week 1</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14758451">
-        <img src="https://cdn.qwiklabs.com/GCiiVx8Cy4UjqMk96YY7X6Xq5YaOsFooB9LrTwMr5Rg%3D" height="100"/><br/>
-        <sub><b>Arcade Trivia Week 2</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14747924">
-        <img src="https://cdn.qwiklabs.com/85FpQtPYWKDKFniw6HSrg50FZaqIvN498EjVAo5vhrg%3D" height="100"/><br/>
-        <sub><b>Arcade Base Camp</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-👉 [View My Full Google Cloud Skills Boost Profile](https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799)
+<p align="center">
+  <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799">
+    View my full Google Cloud Skills Boost profile
+  </a>
+</p>
 
 ---
 
-## 💬 **Fun Facts**
-- I'm currently improving my **C**, **PHP**, **JavaScript**, **Java**
-- Ask me about **C**, **PHP**, **JavaScript**, **Java**
+## 🎖 Other Achievements
+
+<p align="center">
+  <a href="https://holopin.io/@apurba2509">
+    <img src="https://holopin.me/apurba2509" alt="Holopin badges"/>
+  </a>
+</p>
 
 ---
 
-## 🌐 **Connect with me:**
+## 🤝 Let's Connect
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/apurbadas2509/)
-[![Instagram](https://img.shields.io/badge/-Instagram-orange?style=flat&logo=instagram)](https://www.instagram.com/___apurbax___/)
+<p align="center">
+  <a href="https://www.linkedin.com/in/apurbadas2509/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://www.instagram.com/___apurbax___/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  </a>
+  <a href="https://github.com/Apurba2509">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
