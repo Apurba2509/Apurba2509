@@ -57,7 +57,7 @@ I'm a passionate frontend developer with expertise in multiple programming langu
 
 ---
 
-## 🏆 Google Cloud Skills Boost Achievements
+## 🏆 Google Cloud Skills Boost Arcade Achievements
 
 <p align="center">
   <a href="https://www.cloudskillsboost.google/public_profiles/14b35de8-1adb-48a8-9592-8e5413224799/badges/14534278">
