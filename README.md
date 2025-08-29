@@ -19,7 +19,7 @@ I'm a passionate software developer dedicated to building seamless and engaging 
 
 - 🔭 I’m currently building and deploying full-stack applications.
 - 🌱 I’m sharpening my skills in **Android App Development** with Android Studio and strengthening my backend expertise with the **MERN stack (MongoDB, Express.js, React, Node.js)**.
-- 💬 Ask me about **JavaScript, C, Java, or React**.
+- 💬 Ask me about **JavaScript, C, React, or Tailwind CSS**.
 - 📫 Let's connect:
 
 <p align="left">
@@ -44,6 +44,9 @@ Here are some of the technologies I've been working with:
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
@@ -78,9 +81,6 @@ Here are some of the technologies I've been working with:
 
 #### Other Languages
 <p align="left">
-  <a href="https://www.java.com" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
-  </a>
   <a href="https://www.python.org" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   </a>
