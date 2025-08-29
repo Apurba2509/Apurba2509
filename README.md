@@ -3,7 +3,7 @@
 ### Software Developer | Full-Stack & Mobile Enthusiast
 
 <p align="left">
-  <a href="https://github.com/Apurba2509">
+  <a href="https://github.com/Apurba2_509">
     <img src="https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile views" />
   </a>
   <a href="https://github.com/Apurba2509?tab=followers">
@@ -35,9 +35,38 @@ I'm a passionate software developer dedicated to building seamless and engaging 
 
 ## 🛠️ My Tech Stack
 
+#### Frontend
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,react,nodejs,express,mongodb,php,androidstudio,py,c,git,github,vscode&perline=7" />
+    <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,react" />
+  </a>
+</p>
+
+#### Backend & Databases
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,php" />
+  </a>
+</p>
+
+#### App Development
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=androidstudio" />
+  </a>
+</p>
+
+#### Cloud & Tools
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=gcp,git,github,vscode" />
+  </a>
+</p>
+
+#### Languages
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,python" />
   </a>
 </p>
 
