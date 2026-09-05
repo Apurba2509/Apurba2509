@@ -1,9 +1,9 @@
 <div align="center">
 
-<!-- Animated Header -->
-<a href="https://github.com/Apurba2509">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=4285F4&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Apurba+Das+👋;Full-Stack+%26+Mobile+Developer;Cloud+%26+AI+Enthusiast;Tech+Community+Lead" alt="Typing SVG" />
-</a>
+<!-- Animated Gradient Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,7&height=200&section=header&text=Hi%20there,%20I'm%20Apurba%20%F0%9F%91%8B&fontSize=45&fontAlignY=38&animation=twinkling&fontColor=ffffff" alt="Apurba Das Header Banner" />
+
+<h3>Full-Stack & Mobile Developer | Cloud & AI Enthusiast | Tech Community Lead</h3>
 
 *Building seamless cross-platform experiences, scalable cloud solutions, and vibrant tech communities.*
 
@@ -11,7 +11,7 @@
 
 <!-- Social & Profile Links -->
 <p align="center">
-  <a href="https://github.com/Apurba2_509"><img src="https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20Views&color=4285F4&style=for-the-badge" alt="Profile views" /></a>
+  <a href="https://github.com/Apurba2_509"><img src="https://komarev.com/ghpvc/?username=Apurba2509&label=PROFILE%20VIEWS&color=4285F4&style=for-the-badge" alt="Profile views" /></a>
   <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://www.instagram.com/___apurbax___/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 </p>
