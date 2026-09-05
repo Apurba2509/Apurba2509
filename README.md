@@ -1,90 +1,97 @@
-# 👋 Hi, I'm Apurba Das
+<div align="center">
 
-### Software Developer | Full-Stack & Mobile Enthusiast
+<!-- Animated Header -->
+<a href="https://github.com/Apurba2509">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=4285F4&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Apurba+Das+👋;Full-Stack+%26+Mobile+Developer;Cloud+%26+AI+Enthusiast;Tech+Community+Lead" alt="Typing SVG" />
+</a>
 
-<p align="left">
-  <a href="https://github.com/Apurba2_509">
-    <img src="https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile views" />
-  </a>
-  <a href="https://github.com/Apurba2509?tab=followers">
-    <img src="https://img.shields.io/github/followers/Apurba2509?label=Followers&style=social" alt="GitHub followers" />
-  </a>
-</p>
+*Building seamless cross-platform experiences, scalable cloud solutions, and vibrant tech communities.*
 
----
+<br/>
 
-## 🚀 About Me
-
-I'm a passionate software developer dedicated to building seamless and engaging user experiences across both web and mobile platforms. My foundation in frontend development is now complemented by a deep dive into backend and mobile technologies.
-
-- 🔭 I’m currently building and deploying full-stack applications.
-- 🌱 I’m sharpening my skills in **Android App Development** with Android Studio and strengthening my backend expertise with the **MERN stack (MongoDB, Express.js, React, Node.js)**.
-- 💬 Ask me about **JavaScript, C, React, or Tailwind CSS**.
-- 📫 Let's connect:
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/apurbadas2509/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://www.instagram.com/___apurbax___/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-  </a>
-</p>
-
----
-
-## 🛠️ My Tech Stack
-
-#### Frontend
+<!-- Social & Profile Links -->
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,react" />
-  </a>
+  <a href="https://github.com/Apurba2_509"><img src="https://komarev.com/ghpvc/?username=Apurba2509&label=Profile%20Views&color=4285F4&style=for-the-badge" alt="Profile views" /></a>
+  <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.instagram.com/___apurbax___/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 </p>
 
-#### Backend & Databases
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,php" />
-  </a>
-</p>
+</div>
 
-#### App Development
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=androidstudio" />
-  </a>
-</p>
+<br/>
 
-#### Cloud & Tools
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=gcp,git,github,vscode" />
-  </a>
-</p>
+<!-- About Me Section with Clean Bullet Points -->
+### 🚀 The TL;DR
 
-#### Languages
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,python" />
-  </a>
-</p>
+I'm a developer and BCA student at **Techno Main Salt Lake**, focused on bridging the gap between engaging UI and robust backend architecture. I love taking projects from 0 to 1, whether that means architecting a mobile app, configuring AWS/GCP infrastructure, or organizing large-scale tech events.
 
----
+- 🎓 **Studying:** Bachelor of Computer Applications (BCA)
+- 💼 **Leading:** Social Media Head & PR Core for **GDG On-Campus TMSL** | Joint Head of **QZone**
+- ☁️ **Mentoring:** **Google Cloud Arcade** Co-Facilitator (2026 Cohort)
+- 🤝 **Collaborating:** Always open to discussing Cross-platform mobile dev, Hackathons, or Open Source!
 
-## 📊 GitHub Stats
+<br/>
 
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurba2509&layout=compact&langs_count=8&theme=tokyonight"/>
-</p>
+<!-- Collapsible Sections for a cleaner UI -->
+### 🔥 What I'm Up To Right Now
 
----
+<details>
+  <summary><b>🏆 Hackathons & Projects</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <ul>
+    <li><b>DisasterOps:</b> Prototyped for the Google Solution Challenge 2026.</li>
+    <li><b>Smart India Hackathon (SIH):</b> Competed and presented team prototypes.</li>
+    <li><b>HackForge:</b> Gearing up for the upcoming hackathon at Srijan '26.</li>
+    <li><b>Orbit AI & Civic Reporter:</b> Building custom UI/UX in Android Studio and React Native.</li>
+  </ul>
+</details>
 
-## 🎖️ Digital Badges & Achievements
+<details>
+  <summary><b>🌟 Open Source & Community</b> <i>(Click to expand)</i></summary>
+  <br/>
+  <ul>
+    <li><b>GSSoC '26 & Apertre 3.0:</b> Actively contributing as a mentee and selected contributor.</li>
+    <li><b>TechSprint:</b> Co-organized GDG TMSL's inaugural hackathon.</li>
+    <li><b>MapifyOS:</b> Submitted pull requests for OSCG'26.</li>
+  </ul>
+</details>
 
-<p align="center">
+<br/>
+
+### 🛠️ Tech Arsenal
+
+<div align="center">
+  
+**Frontend & Mobile**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,flutter,tailwind,js,html,css" alt="Frontend Stack" /></a>
+<br/><br/>
+
+**Backend, Cloud & Databases**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,aws,gcp,php" alt="Backend Stack" /></a>
+<br/><br/>
+
+**Tools & Languages**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,vscode,git,github,c,python" alt="Tools and Languages" /></a>
+
+</div>
+
+<br/>
+
+### 📊 Developer Analytics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Apurba2509&theme=tokyonight&hide_border=true&background=0D1117" width="48%" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurba2509&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117" width="60%" />
+</div>
+
+<br/>
+
+### 🎖️ Badges & Achievements
+
+<div align="center">
   <a href="https://holopin.io/@apurba2509">
     <img src="https://holopin.me/apurba2509" alt="Holopin badges"/>
   </a>
-</p>
+</div>
