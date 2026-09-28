@@ -14,7 +14,7 @@
 <img src="./assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════════════  WHOAMI  ═══════════════════════════════ -->
-<h2 align="center">⚡ whoami</h2>
+<img src="./assets/headers/whoami.svg" width="100%" alt="01 · Whoami — the human behind the commits" />
 
 <img src="./assets/terminal.svg" width="100%" alt="Terminal running neofetch — Apurba Das: Full-Stack & Mobile Developer, BCA @ Techno Main Salt Lake, GDG On-Campus TMSL Social Media Head & PR Core, QZone Joint Head, Google Cloud Arcade Co-Facilitator (2026 Cohort). Open to discussing cross-platform mobile dev, hackathons and open source." />
 
@@ -23,10 +23,8 @@ I'm a developer & BCA student at <b>Techno Main Salt Lake</b>, bridging the gap 
 I love taking projects from <b>0 → 1</b> — architecting a mobile app, configuring AWS/GCP infrastructure, or organizing large-scale tech events.
 </p>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
 <!-- ═════════════════════════  HACKATHONS & BUILDS  ═════════════════════════ -->
-<h2 align="center">🏆 hackathons & builds</h2>
+<img src="./assets/headers/builds.svg" width="100%" alt="02 · Hackathons & builds — shipped against the clock" />
 
 <table align="center">
   <tr>
@@ -57,7 +55,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 </table>
 
 <!-- ═══════════════════════  OPEN SOURCE & COMMUNITY  ═══════════════════════ -->
-<h2 align="center">🌍 open source & community</h2>
+<img src="./assets/headers/community.svg" width="100%" alt="03 · Open source & community — building in public, with people" />
 
 <table align="center">
   <tr>
@@ -80,10 +78,8 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
   </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
 <!-- ═════════════════════════════  TECH ARSENAL  ═════════════════════════════ -->
-<h2 align="center">🧰 tech arsenal</h2>
+<img src="./assets/headers/arsenal.svg" width="100%" alt="04 · Tech arsenal — tools of the trade" />
 
 <p align="center">
   <code>frontend & mobile</code><br/><br/>
@@ -96,10 +92,8 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,vscode,git,github,c,python&theme=dark" alt="Android Studio, VS Code, Git, GitHub, C, Python" /></a>
 </p>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
 <!-- ═══════════════════════════  GITHUB TELEMETRY  ═══════════════════════════ -->
-<h2 align="center">📡 github telemetry</h2>
+<img src="./assets/headers/stats.svg" width="100%" alt="05 · Live stats — auto-updated every 12 hours" />
 
 <!-- stats.svg + snake are regenerated every 12h by .github/workflows/profile-assets.yml -->
 <div align="center">
@@ -113,7 +107,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 </div>
 
 <!-- ═════════════════════════  ACHIEVEMENTS UNLOCKED  ═════════════════════════ -->
-<h2 align="center">🎖️ achievements unlocked</h2>
+<img src="./assets/headers/achievements.svg" width="100%" alt="06 · Achievements — badges collected along the way" />
 
 <div align="center">
   <a href="https://holopin.io/@apurba2509"><img src="https://holopin.me/apurba2509" alt="Holopin badges" /></a>

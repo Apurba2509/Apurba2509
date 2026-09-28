@@ -60,6 +60,15 @@ OPEN_TO = ["cross-platform-mobile/", "hackathons/", "open-source/"]
 FOOTER_TITLE = "Thanks for stopping by"
 FOOTER_LINE = "let's build something from 0 → 1"
 
+SECTIONS = [  # (file name, title, subtitle) in page order
+    ("whoami", "WHOAMI", "the human behind the commits"),
+    ("builds", "HACKATHONS & BUILDS", "shipped against the clock"),
+    ("community", "OPEN SOURCE & COMMUNITY", "building in public, with people"),
+    ("arsenal", "TECH ARSENAL", "tools of the trade"),
+    ("stats", "LIVE STATS", "auto-updated every 12 hours"),
+    ("achievements", "ACHIEVEMENTS", "badges collected along the way"),
+]
+
 # 7-row pixel font for the neofetch monogram
 PIXEL_FONT = {
     "A": [".####.", "##..##", "##..##", "######", "##..##", "##..##", "##..##"],
@@ -570,10 +579,70 @@ def build_footer():
     return svg(W, H, f"{FOOTER_TITLE}: {FOOTER_LINE}", css, defs, body)
 
 
+# ── section headers ────────────────────────────────────────────────────────
+def build_section(number, title, subtitle):
+    W, H, R = 1000, 88, 14
+    total = len(SECTIONS)
+    css = [
+        f".mono{{font-family:{MONO}}}.sans{{font-family:{SANS}}}",
+        "@keyframes live{0%,100%{opacity:1}50%{opacity:.35}}",
+        ".live{animation:live 1.6s ease-in-out infinite}",
+        f"@keyframes edge{{from{{transform:translateX(0)}}to{{transform:translateX({W + 300}px)}}}}",
+        ".edge{animation:edge 5s cubic-bezier(.6,0,.4,1) infinite}",
+    ]
+    defs = [
+        f'<clipPath id="card"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>',
+        # same shimmer as the hero name, staggered so headers don't flash in sync
+        shine_gradient("shine", 520, -300, 700, 6.5 + number * 0.4),
+        '<radialGradient id="glow" cx="0" cy=".5" r=".55">'
+        f'<stop offset="0" stop-color="{BLUE}" stop-opacity=".16"/>'
+        f'<stop offset="1" stop-color="{BLUE}" stop-opacity="0"/></radialGradient>',
+        '<linearGradient id="sweep" x1="0" x2="1">'
+        f'<stop offset="0" stop-color="{BLUE}" stop-opacity="0"/>'
+        + "".join(f'<stop offset="{.2 + i * .2:.1f}" stop-color="{c}"/>' for i, c in enumerate(GOOGLE))
+        + f'<stop offset="1" stop-color="{GREEN}" stop-opacity="0"/></linearGradient>',
+    ]
+    body = [
+        f'<g clip-path="url(#card)"><rect width="{W}" height="{H}" fill="{BG}"/>',
+        f'<rect width="{W}" height="{H}" fill="url(#glow)"/>',
+    ]
+    # Google-coloured spine on the left edge
+    body += [f'<rect y="{i * H / 4:.1f}" width="5" height="{H / 4:.1f}" fill="{c}"/>'
+             for i, c in enumerate(GOOGLE)]
+    body.append(f'<rect class="edge" x="-300" y="{H - 2}" width="300" height="2" fill="url(#sweep)"/></g>')
+    body.append(f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="{R}" fill="none" stroke="#1F2633"/>')
+
+    # index chip, title, subtitle
+    body.append(f'<rect x="32" y="22" width="42" height="26" rx="7" fill="{BLUE}" fill-opacity=".1" '
+                f'stroke="{BLUE}" stroke-opacity=".55"/>')
+    body.append(f'<text class="mono" x="53" y="40" font-size="14" font-weight="700" text-anchor="middle" '
+                f'fill="{BLUE}">{number:02d}</text>')
+    body.append(f'<text class="sans" x="92" y="45" font-size="27" font-weight="800" letter-spacing="2.5" '
+                f'fill="url(#shine)">{escape(title)}</text>')
+    body.append(mono(92, 69, [("// ", BLUE), (subtitle, MUTED)], 13))
+
+    # progress through the page: one segment per section
+    seg_w, gap = 22, 6
+    x0 = W - 32 - total * seg_w - (total - 1) * gap
+    for i in range(total):
+        fill = GOOGLE[i % 4] if i < number else "#1F2633"
+        live = ' class="live"' if i == number - 1 else ""
+        body.append(f'<rect{live} x="{x0 + i * (seg_w + gap)}" y="30" width="{seg_w}" height="5" rx="2.5" fill="{fill}"/>')
+    body.append(f'<text class="mono" x="{W - 32}" y="62" font-size="11" letter-spacing="2" text-anchor="end" '
+                f'fill="{MUTED}">SECTION {number:02d}/{total:02d}</text>')
+
+    return svg(W, H, f"{number:02d} · {title.title()}: {subtitle}", css, defs, body)
+
+
 if __name__ == "__main__":
     ASSETS.mkdir(exist_ok=True)
     for name, build in [("hero", build_hero), ("terminal", build_terminal),
                         ("divider", build_divider), ("footer", build_footer)]:
         out = ASSETS / f"{name}.svg"
         out.write_text(build(), encoding="utf-8")
+        print(f"wrote {out.relative_to(ASSETS.parent)}  ({out.stat().st_size / 1024:.1f} KB)")
+    (ASSETS / "headers").mkdir(exist_ok=True)
+    for number, (name, title, subtitle) in enumerate(SECTIONS, 1):
+        out = ASSETS / "headers" / f"{name}.svg"
+        out.write_text(build_section(number, title, subtitle), encoding="utf-8")
         print(f"wrote {out.relative_to(ASSETS.parent)}  ({out.stat().st_size / 1024:.1f} KB)")
