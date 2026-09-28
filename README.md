@@ -28,7 +28,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <!-- ═════════════════════════  HACKATHONS & BUILDS  ═════════════════════════ -->
 <h2 align="center">🏆 hackathons & builds</h2>
 
-<table>
+<table align="center">
   <tr>
     <td width="50%" valign="top">
       <h3>🌋 DisasterOps</h3>
@@ -59,7 +59,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <!-- ═══════════════════════  OPEN SOURCE & COMMUNITY  ═══════════════════════ -->
 <h2 align="center">🌍 open source & community</h2>
 
-<table>
+<table align="center">
   <tr>
     <td width="50%" valign="top">
       <h3>🌱 Open Source</h3>
