@@ -60,6 +60,12 @@ OPEN_TO = ["cross-platform-mobile/", "hackathons/", "open-source/"]
 FOOTER_TITLE = "Thanks for stopping by"
 FOOTER_LINE = "let's build something from 0 → 1"
 
+SOCIALS = [  # (file name, platform, handle) — the link URLs live in README.md
+    ("linkedin", "LINKEDIN", "apurbadas2509"),
+    ("instagram", "INSTAGRAM", "@___apurbax___"),
+    ("github", "GITHUB", "@Apurba2509"),
+]
+
 SECTIONS = [  # (file name, title, subtitle) in page order
     ("whoami", "WHOAMI", "the human behind the commits"),
     ("builds", "HACKATHONS & BUILDS", "shipped against the clock"),
@@ -579,6 +585,75 @@ def build_footer():
     return svg(W, H, f"{FOOTER_TITLE}: {FOOTER_LINE}", css, defs, body)
 
 
+# ── social link buttons ────────────────────────────────────────────────────
+# Brand glyphs on a 24×24 grid, drawn on an app-icon style tile.
+ICONS = {
+    "linkedin": (
+        "#0A66C2",
+        '<path fill="#fff" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 '
+        "1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 "
+        "4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 "
+        '20.452H3.555V9h3.564v11.452z"/>',
+    ),
+    "instagram": (
+        "url(#ig)",
+        '<rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="#fff" stroke-width="2"/>'
+        '<circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="2"/>'
+        '<circle cx="17.2" cy="6.8" r="1.25" fill="#fff"/>',
+    ),
+    "github": (
+        "#F0F6FC",
+        '<path fill="#0D1117" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258'
+        ".82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 "
+        "17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495"
+        ".998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135"
+        "-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 "
+        ".405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 "
+        "4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825"
+        '.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>',
+    ),
+}
+
+
+def build_social(index, name, platform, handle):
+    W, H, R = 236, 64, 16
+    tile, glyph = ICONS[name]
+    css = [
+        f".mono{{font-family:{MONO}}}.sans{{font-family:{SANS}}}",
+        f"@keyframes shine{{0%{{transform:translateX(0)}}30%,100%{{transform:translateX({W + 160}px)}}}}",
+        f".shine{{animation:shine 6s ease-in-out {index * 0.35:.2f}s infinite}}",
+    ]
+    defs = [
+        f'<clipPath id="card"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>',
+        '<linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#FEDA75"/><stop offset=".3" stop-color="#FA7E1E"/>'
+        '<stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient>',
+        '<linearGradient id="edge" x1="0" x2="1">'
+        + "".join(f'<stop offset="{i / 3:.3f}" stop-color="{c}" stop-opacity=".7"/>'
+                  for i, c in enumerate(GOOGLE))
+        + "</linearGradient>",
+        '<linearGradient id="gloss" x1="0" x2="1">'
+        '<stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+        '<stop offset=".5" stop-color="#fff" stop-opacity=".09"/>'
+        '<stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>',
+    ]
+    body = [
+        f'<g clip-path="url(#card)"><rect width="{W}" height="{H}" fill="{PANEL}"/>',
+        f'<rect class="shine" x="-150" width="110" height="{H}" fill="url(#gloss)" '
+        f'transform="skewX(-20)"/></g>',
+        f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="{R - .5}" fill="none" '
+        f'stroke="{BORDER}" stroke-width="1.5"/>',
+        f'<rect x="{R}" y="{H - 1.5}" width="{W - 2 * R}" height="1.5" fill="url(#edge)"/>',
+        f'<rect x="12" y="12" width="40" height="40" rx="11" fill="{tile}"/>',
+        f'<g transform="translate(20 20) scale(1)">{glyph}</g>',
+        f'<text class="mono" x="66" y="28" font-size="10.5" letter-spacing="2" fill="{MUTED}">{platform}</text>',
+        f'<text class="sans" x="66" y="47" font-size="16" font-weight="600" fill="{TEXT}">{escape(handle)}</text>',
+        f'<path d="M{W - 33} {H / 2 + 5}l10-10m-7 0h7v7" fill="none" stroke="{MUTED}" '
+        'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+    ]
+    return svg(W, H, f"{platform.title()}: {handle}", css, defs, body)
+
+
 # ── section headers ────────────────────────────────────────────────────────
 def build_section(number, title, subtitle):
     W, H, R = 1000, 88, 14
@@ -640,6 +715,11 @@ if __name__ == "__main__":
                         ("divider", build_divider), ("footer", build_footer)]:
         out = ASSETS / f"{name}.svg"
         out.write_text(build(), encoding="utf-8")
+        print(f"wrote {out.relative_to(ASSETS.parent)}  ({out.stat().st_size / 1024:.1f} KB)")
+    (ASSETS / "social").mkdir(exist_ok=True)
+    for index, (name, platform, handle) in enumerate(SOCIALS):
+        out = ASSETS / "social" / f"{name}.svg"
+        out.write_text(build_social(index, name, platform, handle), encoding="utf-8")
         print(f"wrote {out.relative_to(ASSETS.parent)}  ({out.stat().st_size / 1024:.1f} KB)")
     (ASSETS / "headers").mkdir(exist_ok=True)
     for number, (name, title, subtitle) in enumerate(SECTIONS, 1):

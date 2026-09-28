@@ -3,11 +3,14 @@
   <img src="./assets/hero.svg" width="100%" alt="Apurba Das — Full-Stack & Mobile Developer · Cloud & AI Enthusiast · Open-Source Contributor · Tech Community Lead" />
   <p><i>Building seamless cross-platform experiences, scalable cloud solutions, and vibrant tech communities.</i></p>
   <p>
-    <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="https://img.shields.io/badge/LinkedIn-apurbadas2509-4285F4?style=for-the-badge&labelColor=0A0D14&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjUgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNXpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B" alt="LinkedIn" /></a>
-    <a href="https://www.instagram.com/___apurbax___/"><img src="https://img.shields.io/badge/Instagram-______apurbax______-EA4335?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0A0D14" alt="Instagram" /></a>
-    <br/>
-    <a href="https://github.com/Apurba2509?tab=followers"><img src="https://img.shields.io/github/followers/Apurba2509?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=34A853&labelColor=0A0D14" alt="GitHub followers" /></a>
-    <a href="https://github.com/Apurba2509"><img src="https://komarev.com/ghpvc/?username=Apurba2509&label=PROFILE%20VIEWS&color=FBBC05&style=for-the-badge" alt="Profile views" /></a>
+    <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="./assets/social/linkedin.svg" height="54" alt="LinkedIn: apurbadas2509" /></a>
+    <a href="https://www.instagram.com/___apurbax___/"><img src="./assets/social/instagram.svg" height="54" alt="Instagram: @___apurbax___" /></a>
+    <a href="https://github.com/Apurba2509?tab=repositories"><img src="./assets/social/github.svg" height="54" alt="GitHub: @Apurba2509" /></a>
+  </p>
+  <p>
+    <!-- counters.svg is rebuilt every 12h by the workflow; the 1px komarev image keeps counting visits -->
+    <a href="https://github.com/Apurba2509?tab=followers"><img src="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/counters.svg" height="34" alt="GitHub followers and profile views" /></a>
+    <img src="https://komarev.com/ghpvc/?username=Apurba2509" width="1" height="1" alt="" />
   </p>
 </div>
 

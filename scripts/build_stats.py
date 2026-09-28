@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Renders the live GitHub stats card (stats.svg) from the GraphQL API.
+"""Renders the live GitHub stats card (stats.svg) and the followers/views
+chip (counters.svg) from the GraphQL API.
 
 Runs in the profile-assets workflow with the built-in GITHUB_TOKEN and is
 published to the `output` branch next to the snake, so the card never depends
@@ -9,13 +10,14 @@ on a shared third-party instance staying up. Standard library only.
 
 Preview the layout locally (clearly marked as sample data):
 
-    python scripts/build_stats.py --sample --out stats-preview.svg
+    python scripts/build_stats.py --sample --out preview/stats.svg
 """
 
 import argparse
 import json
 import os
 import random
+import re
 import sys
 import time
 import urllib.request
@@ -23,14 +25,15 @@ from collections import Counter
 from datetime import date, timedelta
 from xml.sax.saxutils import escape
 
-from build_assets import (BG, BLUE, BORDER, GOOGLE, MONO, MUTED, SANS, SUB, TEXT,
-                          YELLOW, border_gradient, svg)
+from build_assets import (BG, BLUE, BORDER, GOOGLE, GREEN, MONO, MUTED, PANEL, SANS, SUB,
+                          TEXT, YELLOW, border_gradient, mono, svg)
 
 GRID = "#1C2230"  # hairline, one step off the card surface
 
 QUERY = """
 query($login: String!) {
   user(login: $login) {
+    followers { totalCount }
     pullRequests { totalCount }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
       nodes {
@@ -73,6 +76,20 @@ def fetch(login, token):
             time.sleep(5 * (attempt + 1))
 
 
+def fetch_profile_views(login):
+    """komarev only exposes its counter inside the badge image (reading it counts
+    as one view). Returns None rather than failing the whole run."""
+    request = urllib.request.Request(f"https://komarev.com/ghpvc/?username={login}",
+                                     headers={"User-Agent": "profile-stats-card"})
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            numbers = re.findall(r">([\d,]+)</text>", response.read().decode())
+        return int(numbers[-1].replace(",", "")) if numbers else None
+    except Exception as err:
+        print(f"profile views unavailable: {err}", file=sys.stderr)
+        return None
+
+
 def summarize(user):
     calendar = user["contributionsCollection"]["contributionCalendar"]
     days = sorted((d for w in calendar["weeks"] for d in w["contributionDays"]),
@@ -105,6 +122,8 @@ def summarize(user):
         "best_streak": best,
         "commits": user["contributionsCollection"]["totalCommitContributions"],
         "pull_requests": user["pullRequests"]["totalCount"],
+        "followers": user["followers"]["totalCount"],
+        "views": None,
         "stars": sum(r["stargazerCount"] for r in user["repositories"]["nodes"]),
         "weeks": weeks,
         "languages": [(name, size / total) for name, size in languages.most_common(6)],
@@ -119,7 +138,8 @@ def sample_stats():
               max(0, int(rnd.gauss(9 + 8 * (i / 52), 7)))) for i in range(52)]
     return {
         "contributions": sum(c for _, c in weeks), "current_streak": 6, "best_streak": 19,
-        "commits": 402, "pull_requests": 37, "stars": 24, "weeks": weeks,
+        "commits": 402, "pull_requests": 37, "stars": 24, "followers": 42, "views": 1234,
+        "weeks": weeks,
         "languages": [("JavaScript", .36), ("Kotlin", .19), ("Dart", .14),
                       ("HTML", .12), ("CSS", .09), ("Python", .05)],
         "sample": True,
@@ -268,6 +288,37 @@ def render(stats, login):
     return svg(W, H, label, css, defs, body)
 
 
+def render_counters(stats, login):
+    """Pill with followers and profile views, styled like the link buttons."""
+    H, PAD = 40, 18
+    items = [("followers", stats["followers"])]
+    if stats.get("views") is not None:
+        items.append(("profile views", stats["views"]))
+    css = [
+        f".mono{{font-family:{MONO}}}",
+        "@keyframes ping{from{transform:scale(1);opacity:.9}to{transform:scale(3);opacity:0}}",
+        ".ping{animation:ping 2s ease-out infinite;transform-box:fill-box;transform-origin:center}",
+    ]
+    parts = [f'<circle cx="{PAD + 2}" cy="{H / 2}" r="3.5" fill="{GREEN}"/>'
+             f'<circle class="ping" cx="{PAD + 2}" cy="{H / 2}" r="3.5" fill="none" '
+             f'stroke="{GREEN}" stroke-width="1.2"/>']
+    x = PAD + 16
+    for i, (label, value) in enumerate(items):
+        if i:
+            parts.append(f'<rect x="{x + 9:.1f}" y="12" width="1" height="{H - 24}" fill="{BORDER}"/>')
+            x += 18
+        number = f"{value:,}"
+        parts.append(mono(x, 25.5, [(number, TEXT, True)], 14))
+        x += len(number) * 14 * 0.6 + 7
+        parts.append(mono(x, 25.5, [(label, MUTED)], 12))
+        x += len(label) * 12 * 0.6
+    W = round(x + PAD)
+    body = [f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="{H / 2 - .75}" '
+            f'fill="{PANEL}" stroke="{BORDER}" stroke-width="1.5"/>'] + parts
+    label = ", ".join(f"{v:,} {k}" for k, v in items) + f" · @{login}"
+    return svg(W, H, label, css, [], body)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--user", default=os.environ.get("GITHUB_REPOSITORY_OWNER", "Apurba2509"))
@@ -282,12 +333,16 @@ def main():
         if not token:
             sys.exit("GITHUB_TOKEN is not set (use --sample for a local preview)")
         stats = summarize(fetch(args.user, token))
+        stats["views"] = fetch_profile_views(args.user)
 
     out = os.path.abspath(args.out)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         f.write(render(stats, args.user))
-    print(f"wrote {args.out}")
+    counters = os.path.join(os.path.dirname(out), "counters.svg")
+    with open(counters, "w", encoding="utf-8") as f:
+        f.write(render_counters(stats, args.user))
+    print(f"wrote {args.out} and {counters}")
 
 
 if __name__ == "__main__":
