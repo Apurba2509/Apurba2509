@@ -1,97 +1,124 @@
+<!-- ════════════════════════════════  HERO  ════════════════════════════════ -->
 <div align="center">
+  <img src="./assets/hero.svg" width="100%" alt="Apurba Das — Full-Stack & Mobile Developer · Cloud & AI Enthusiast · Open-Source Contributor · Tech Community Lead" />
+  <p><i>Building seamless cross-platform experiences, scalable cloud solutions, and vibrant tech communities.</i></p>
+  <p>
+    <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="https://img.shields.io/badge/LinkedIn-apurbadas2509-4285F4?style=for-the-badge&labelColor=0A0D14&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjUgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNXpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B" alt="LinkedIn" /></a>
+    <a href="https://www.instagram.com/___apurbax___/"><img src="https://img.shields.io/badge/Instagram-______apurbax______-EA4335?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0A0D14" alt="Instagram" /></a>
+    <br/>
+    <a href="https://github.com/Apurba2509?tab=followers"><img src="https://img.shields.io/github/followers/Apurba2509?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=34A853&labelColor=0A0D14" alt="GitHub followers" /></a>
+    <a href="https://github.com/Apurba2509"><img src="https://komarev.com/ghpvc/?username=Apurba2509&label=PROFILE%20VIEWS&color=FBBC05&style=for-the-badge" alt="Profile views" /></a>
+  </p>
+</div>
 
-<!-- Animated Gradient Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,7&height=200&section=header&text=Hi%20there,%20I'm%20Apurba%20%F0%9F%91%8B&fontSize=45&fontAlignY=38&animation=twinkling&fontColor=ffffff" alt="Apurba Das Header Banner" />
+<img src="./assets/divider.svg" width="100%" alt="" />
 
-<h3>Full-Stack & Mobile Developer | Cloud & AI Enthusiast | Tech Community Lead</h3>
+<!-- ═══════════════════════════════  WHOAMI  ═══════════════════════════════ -->
+<h2 align="center">⚡ whoami</h2>
 
-*Building seamless cross-platform experiences, scalable cloud solutions, and vibrant tech communities.*
+<img src="./assets/terminal.svg" width="100%" alt="Terminal running neofetch — Apurba Das: Full-Stack & Mobile Developer, BCA @ Techno Main Salt Lake, GDG On-Campus TMSL Social Media Head & PR Core, QZone Joint Head, Google Cloud Arcade Co-Facilitator (2026 Cohort). Open to discussing cross-platform mobile dev, hackathons and open source." />
 
-<br/>
-
-<!-- Social & Profile Links -->
 <p align="center">
-  <a href="https://github.com/Apurba2_509"><img src="https://komarev.com/ghpvc/?username=Apurba2509&label=PROFILE%20VIEWS&color=4285F4&style=for-the-badge" alt="Profile views" /></a>
-  <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://www.instagram.com/___apurbax___/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+I'm a developer & BCA student at <b>Techno Main Salt Lake</b>, bridging the gap between <b>engaging UI</b> and <b>robust backend architecture</b>.<br/>
+I love taking projects from <b>0 → 1</b> — architecting a mobile app, configuring AWS/GCP infrastructure, or organizing large-scale tech events.
 </p>
 
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+<!-- ═════════════════════════  HACKATHONS & BUILDS  ═════════════════════════ -->
+<h2 align="center">🏆 hackathons & builds</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌋 DisasterOps</h3>
+      <p>Prototyped for the <b>Google Solution Challenge 2026</b>.</p>
+      <img src="https://img.shields.io/badge/Google_Solution_Challenge-2026-4285F4?style=flat-square&labelColor=161B22" alt="Google Solution Challenge 2026" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>🇮🇳 Smart India Hackathon</h3>
+      <p>Competed and presented team prototypes at <b>SIH</b>.</p>
+      <img src="https://img.shields.io/badge/SIH-competed-EA4335?style=flat-square&labelColor=161B22" alt="Smart India Hackathon" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚔️ HackForge</h3>
+      <p>Hackathon at <b>Srijan '26</b>.</p>
+      <img src="https://img.shields.io/badge/Srijan-'26-FBBC05?style=flat-square&labelColor=161B22" alt="Srijan '26" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛰️ Orbit AI · 📣 Civic Reporter</h3>
+      <p>Custom UI/UX built in <b>Android Studio</b> and <b>React Native</b>.</p>
+      <img src="https://img.shields.io/badge/Android_Studio-34A853?style=flat-square&logo=androidstudio&logoColor=white" alt="Android Studio" />
+      <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
+    </td>
+  </tr>
+</table>
+
+<!-- ═══════════════════════  OPEN SOURCE & COMMUNITY  ═══════════════════════ -->
+<h2 align="center">🌍 open source & community</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌱 Open Source</h3>
+      <ul>
+        <li><b>GSSoC '26</b> & <b>Apertre 3.0</b>: contributing as a mentee & selected contributor</li>
+        <li><b>MapifyOS</b>: pull requests for <b>OSCG '26</b></li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎤 Community</h3>
+      <ul>
+        <li><b>GDG On-Campus TMSL</b>: Social Media Head & PR Core</li>
+        <li><b>TechSprint</b>: co-organized GDG TMSL's inaugural hackathon</li>
+        <li><b>QZone</b>: Joint Head</li>
+        <li><b>Google Cloud Arcade</b>: Co-Facilitator, 2026 Cohort</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+<!-- ═════════════════════════════  TECH ARSENAL  ═════════════════════════════ -->
+<h2 align="center">🧰 tech arsenal</h2>
+
+<p align="center">
+  <code>frontend & mobile</code><br/><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,flutter,tailwind,js,html,css&theme=dark" alt="React, Flutter, Tailwind, JavaScript, HTML, CSS" /></a>
+  <br/><br/>
+  <code>backend, cloud & databases</code><br/><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,aws,gcp,php&theme=dark" alt="Node.js, Express, MongoDB, Firebase, AWS, GCP, PHP" /></a>
+  <br/><br/>
+  <code>tools & languages</code><br/><br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,vscode,git,github,c,python&theme=dark" alt="Android Studio, VS Code, Git, GitHub, C, Python" /></a>
+</p>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+<!-- ═══════════════════════════  GITHUB TELEMETRY  ═══════════════════════════ -->
+<h2 align="center">📡 github telemetry</h2>
+
+<!-- stats.svg + snake are regenerated every 12h by .github/workflows/profile-assets.yml -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/stats.svg" width="100%" alt="GitHub stats: contributions and streaks over the past year, commits, pull requests, stars, weekly contributions and top languages" />
+  <br/><br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/snake-light.svg" />
+    <img src="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/snake-dark.svg" width="100%" alt="Snake eating my contribution graph" />
+  </picture>
 </div>
 
-<br/>
-
-<!-- About Me Section with Clean Bullet Points -->
-### 🚀 The TL;DR
-
-I'm a developer and BCA student at **Techno Main Salt Lake**, focused on bridging the gap between engaging UI and robust backend architecture. I love taking projects from 0 to 1, whether that means architecting a mobile app, configuring AWS/GCP infrastructure, or organizing large-scale tech events.
-
-- 🎓 **Studying:** Bachelor of Computer Applications (BCA)
-- 💼 **Leading:** Social Media Head & PR Core for **GDG On-Campus TMSL** | Joint Head of **QZone**
-- ☁️ **Mentoring:** **Google Cloud Arcade** Co-Facilitator (2026 Cohort)
-- 🤝 **Collaborating:** Always open to discussing Cross-platform mobile dev, Hackathons, or Open Source!
-
-<br/>
-
-<!-- Collapsible Sections for a cleaner UI -->
-### 🔥 What I'm Up To Right Now
-
-<details>
-  <summary><b>🏆 Hackathons & Projects</b> <i>(Click to expand)</i></summary>
-  <br/>
-  <ul>
-    <li><b>DisasterOps:</b> Prototyped for the Google Solution Challenge 2026.</li>
-    <li><b>Smart India Hackathon (SIH):</b> Competed and presented team prototypes.</li>
-    <li><b>HackForge:</b> Gearing up for the upcoming hackathon at Srijan '26.</li>
-    <li><b>Orbit AI & Civic Reporter:</b> Building custom UI/UX in Android Studio and React Native.</li>
-  </ul>
-</details>
-
-<details>
-  <summary><b>🌟 Open Source & Community</b> <i>(Click to expand)</i></summary>
-  <br/>
-  <ul>
-    <li><b>GSSoC '26 & Apertre 3.0:</b> Actively contributing as a mentee and selected contributor.</li>
-    <li><b>TechSprint:</b> Co-organized GDG TMSL's inaugural hackathon.</li>
-    <li><b>MapifyOS:</b> Submitted pull requests for OSCG'26.</li>
-  </ul>
-</details>
-
-<br/>
-
-### 🛠️ Tech Arsenal
+<!-- ═════════════════════════  ACHIEVEMENTS UNLOCKED  ═════════════════════════ -->
+<h2 align="center">🎖️ achievements unlocked</h2>
 
 <div align="center">
-  
-**Frontend & Mobile**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,flutter,tailwind,js,html,css" alt="Frontend Stack" /></a>
-<br/><br/>
-
-**Backend, Cloud & Databases**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,aws,gcp,php" alt="Backend Stack" /></a>
-<br/><br/>
-
-**Tools & Languages**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,vscode,git,github,c,python" alt="Tools and Languages" /></a>
-
+  <a href="https://holopin.io/@apurba2509"><img src="https://holopin.me/apurba2509" alt="Holopin badges" /></a>
 </div>
 
 <br/>
 
-### 📊 Developer Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Apurba2509&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Apurba2509&theme=tokyonight&hide_border=true&background=0D1117" width="48%" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurba2509&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117" width="60%" />
-</div>
-
-<br/>
-
-### 🎖️ Badges & Achievements
-
-<div align="center">
-  <a href="https://holopin.io/@apurba2509">
-    <img src="https://holopin.me/apurba2509" alt="Holopin badges"/>
-  </a>
-</div>
+<img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
