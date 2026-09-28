@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Renders the live GitHub stats card (stats.svg) and the followers/views
-chip (counters.svg) from the GraphQL API.
+"""Renders the live GitHub stats card (stats.svg) and the reach strip
+(counters.svg: LinkedIn/Instagram counts from REACH + live GitHub followers
+and profile views).
 
 Runs in the profile-assets workflow with the built-in GITHUB_TOKEN and is
 published to the `output` branch next to the snake, so the card never depends
@@ -25,10 +26,12 @@ from collections import Counter
 from datetime import date, timedelta
 from xml.sax.saxutils import escape
 
-from build_assets import (BG, BLUE, BORDER, GOOGLE, GREEN, MONO, MUTED, PANEL, SANS, SUB,
-                          TEXT, YELLOW, border_gradient, mono, svg)
+from build_assets import (BG, BLUE, BORDER, GOOGLE, ICONS, IG_GRADIENT, MONO, MUTED, PANEL,
+                          REACH, SANS, SUB, TEXT, YELLOW, border_gradient, mono, svg)
 
 GRID = "#1C2230"  # hairline, one step off the card surface
+EYE = (f'<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" '
+       f'stroke="{SUB}" stroke-width="2.2"/><circle cx="12" cy="12" r="3.2" fill="{SUB}"/>')
 
 QUERY = """
 query($login: String!) {
@@ -289,35 +292,41 @@ def render(stats, login):
 
 
 def render_counters(stats, login):
-    """Pill with followers and profile views, styled like the link buttons."""
-    H, PAD = 40, 18
-    items = [("followers", stats["followers"])]
+    """Reach strip: hand-typed LinkedIn/Instagram counts (REACH in build_assets.py)
+    followed by live GitHub followers and profile views."""
+    H, PAD, TILE = 44, 16, 20
+    groups = {}
+    for platform, number, label in REACH:
+        groups.setdefault(platform, []).append((number, label))
+    groups["github"] = [(f"{stats['followers']:,}", "followers")]
     if stats.get("views") is not None:
-        items.append(("profile views", stats["views"]))
-    css = [
-        f".mono{{font-family:{MONO}}}",
-        "@keyframes ping{from{transform:scale(1);opacity:.9}to{transform:scale(3);opacity:0}}",
-        ".ping{animation:ping 2s ease-out infinite;transform-box:fill-box;transform-origin:center}",
-    ]
-    parts = [f'<circle cx="{PAD + 2}" cy="{H / 2}" r="3.5" fill="{GREEN}"/>'
-             f'<circle class="ping" cx="{PAD + 2}" cy="{H / 2}" r="3.5" fill="none" '
-             f'stroke="{GREEN}" stroke-width="1.2"/>']
-    x = PAD + 16
-    for i, (label, value) in enumerate(items):
-        if i:
-            parts.append(f'<rect x="{x + 9:.1f}" y="12" width="1" height="{H - 24}" fill="{BORDER}"/>')
-            x += 18
-        number = f"{value:,}"
-        parts.append(mono(x, 25.5, [(number, TEXT, True)], 14))
-        x += len(number) * 14 * 0.6 + 7
-        parts.append(mono(x, 25.5, [(label, MUTED)], 12))
-        x += len(label) * 12 * 0.6
-    W = round(x + PAD)
+        groups["views"] = [(f"{stats['views']:,}", "profile views")]
+    names = {"linkedin": "LinkedIn: ", "instagram": "Instagram: ", "github": "GitHub: ", "views": ""}
+
+    y = H / 2 + 5
+    parts, x = [], PAD
+    for g, (platform, items) in enumerate(groups.items()):
+        if g:
+            parts.append(f'<rect x="{x + 11:.1f}" y="13" width="1" height="{H - 26}" fill="{BORDER}"/>')
+            x += 23
+        tile, glyph = ("#1F2633", EYE) if platform == "views" else ICONS.get(platform, ("#1F2633", ""))
+        parts.append(f'<rect x="{x:.1f}" y="{(H - TILE) / 2}" width="{TILE}" height="{TILE}" rx="5.5" fill="{tile}"/>'
+                     f'<g transform="translate({x + 4:.1f} {(H - TILE) / 2 + 4}) scale(.5)">{glyph}</g>')
+        x += TILE + 9
+        for i, (number, label) in enumerate(items):
+            if i:
+                parts.append(mono(x, y, [("·", MUTED)], 12))
+                x += 1 * 12 * 0.6 + 8
+            parts.append(mono(x, y, [(number, TEXT, True)], 14))
+            x += len(number) * 14 * 0.6 + 6
+            parts.append(mono(x, y, [(label, MUTED)], 12))
+            x += len(label) * 12 * 0.6 + 6
+    W = round(x - 6 + PAD)
     body = [f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="{H / 2 - .75}" '
             f'fill="{PANEL}" stroke="{BORDER}" stroke-width="1.5"/>'] + parts
-    label = ", ".join(f"{v:,} {k}" for k, v in items) + f" · @{login}"
-    return svg(W, H, label, css, [], body)
-
+    label = " · ".join(names.get(p, p.title() + ": ") + ", ".join(f"{n} {l}" for n, l in items)
+                       for p, items in groups.items())
+    return svg(W, H, label, [f".mono{{font-family:{MONO}}}"], [IG_GRADIENT], body)
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])

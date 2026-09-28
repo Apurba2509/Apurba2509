@@ -8,8 +8,8 @@
     <a href="https://github.com/Apurba2509?tab=repositories"><img src="./assets/social/github.svg" height="54" alt="GitHub: @Apurba2509" /></a>
   </p>
   <p>
-    <!-- counters.svg is rebuilt every 12h by the workflow; the 1px komarev image keeps counting visits -->
-    <a href="https://github.com/Apurba2509?tab=followers"><img src="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/counters.svg" height="34" alt="GitHub followers and profile views" /></a>
+    <!-- counters.svg (reach strip) is rebuilt by the workflow; edit REACH in scripts/build_assets.py for LinkedIn/Instagram. The 1px komarev image keeps counting visits -->
+    <a href="https://github.com/Apurba2509?tab=followers"><img src="https://raw.githubusercontent.com/Apurba2509/Apurba2509/output/counters.svg" width="76%" alt="Reach: LinkedIn connections and followers, Instagram followers, GitHub followers and profile views" /></a>
     <img src="https://komarev.com/ghpvc/?username=Apurba2509" width="1" height="1" alt="" />
   </p>
 </div>
@@ -85,13 +85,13 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <img src="./assets/headers/arsenal.svg" width="100%" alt="04 · Tech arsenal — tools of the trade" />
 
 <p align="center">
-  <code>frontend & mobile</code><br/><br/>
+  <code>Frontend & Mobile</code><br/><br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,flutter,tailwind,js,html,css&theme=dark" alt="React, Flutter, Tailwind, JavaScript, HTML, CSS" /></a>
   <br/><br/>
-  <code>backend, cloud & databases</code><br/><br/>
+  <code>Backend, Cloud & Databases</code><br/><br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,aws,gcp,php&theme=dark" alt="Node.js, Express, MongoDB, Firebase, AWS, GCP, PHP" /></a>
   <br/><br/>
-  <code>tools & languages</code><br/><br/>
+  <code>Tools & Languages</code><br/><br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,vscode,git,github,c,python&theme=dark" alt="Android Studio, VS Code, Git, GitHub, C, Python" /></a>
 </p>
 

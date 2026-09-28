@@ -66,6 +66,15 @@ SOCIALS = [  # (file name, platform, handle) — the link URLs live in README.md
     ("github", "GITHUB", "@Apurba2509"),
 ]
 
+# Counts GitHub can't fetch for you (LinkedIn/Instagram have no public API).
+# Update them by hand and push; the workflow redraws the reach strip on every push.
+# GitHub followers and profile views are added live by scripts/build_stats.py.
+REACH = [  # (platform, number, label)
+    ("linkedin", "500+", "connections"),
+    ("linkedin", "765", "followers"),
+    ("instagram", "969", "followers"),
+]
+
 SECTIONS = [  # (file name, title, subtitle) in page order
     ("whoami", "WHOAMI", "the human behind the commits"),
     ("builds", "HACKATHONS & BUILDS", "shipped against the clock"),
@@ -586,6 +595,12 @@ def build_footer():
 
 
 # ── social link buttons ────────────────────────────────────────────────────
+IG_GRADIENT = (
+    '<linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">'
+    '<stop offset="0" stop-color="#FEDA75"/><stop offset=".3" stop-color="#FA7E1E"/>'
+    '<stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient>'
+)
+
 # Brand glyphs on a 24×24 grid, drawn on an app-icon style tile.
 ICONS = {
     "linkedin": (
@@ -625,9 +640,7 @@ def build_social(index, name, platform, handle):
     ]
     defs = [
         f'<clipPath id="card"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>',
-        '<linearGradient id="ig" x1="0" y1="1" x2="1" y2="0">'
-        '<stop offset="0" stop-color="#FEDA75"/><stop offset=".3" stop-color="#FA7E1E"/>'
-        '<stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient>',
+        IG_GRADIENT,
         '<linearGradient id="edge" x1="0" x2="1">'
         + "".join(f'<stop offset="{i / 3:.3f}" stop-color="{c}" stop-opacity=".7"/>'
                   for i, c in enumerate(GOOGLE))
