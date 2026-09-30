@@ -119,7 +119,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <br/>
 
 <!-- DAILY:START (rewritten by .github/workflows/daily-readme.yml — edit quotes in scripts/daily_update.py) -->
-<p align="center"><sub>💬 <i>"The best way to predict the future is to invent it."</i> — Alan Kay</sub></p>
+<p align="center"><sub>💬 <i>"If debugging is the process of removing bugs, then programming must be the process of putting them in."</i> — Edsger W. Dijkstra</sub></p>
 <!-- DAILY:END -->
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
