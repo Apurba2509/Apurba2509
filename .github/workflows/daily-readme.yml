@@ -1,0 +1,54 @@
+# Swaps the quote line in README.md (between the DAILY markers) and commits it
+# as the repo owner, so the commit shows on the contribution graph.
+#
+# Two scheduled runs a day, each updating with 60% probability:
+# ~36% of days get 2 commits, ~48% get 1, ~16% get none.
+# Manual runs, and pushes that change this workflow or its script, always update.
+name: Daily README refresh
+
+on:
+  schedule:
+    - cron: "37 3 * * *"   # 09:07 IST
+    - cron: "13 14 * * *"  # 19:43 IST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/daily-readme.yml
+      - scripts/daily_update.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-readme
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Maybe swap the quote
+        run: python3 scripts/daily_update.py --chance ${{ github.event_name == 'schedule' && '0.6' || '1' }}
+
+      - name: Commit as the repo owner
+        env:
+          OWNER: ${{ github.repository_owner }}
+          OWNER_ID: ${{ github.repository_owner_id }}
+        run: |
+          if git diff --quiet; then
+            echo "README unchanged, nothing to commit"
+            exit 0
+          fi
+          # the no-reply address is linked to the account, so the commit counts as yours
+          git config user.name "$OWNER"
+          git config user.email "$OWNER_ID+$OWNER@users.noreply.github.com"
+          git commit -am "docs: refresh daily quote"
+          for attempt in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git pull --rebase origin main
+          done
+          exit 1
