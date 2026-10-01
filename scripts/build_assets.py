@@ -53,6 +53,7 @@ NEOFETCH = [
     ("Stack", "React · Flutter · Node · Firebase · AWS · GCP"),
     ("Focus", "engaging UI + robust backend architecture"),
     ("Uptime", "taking ideas from 0 → 1"),
+    ("Portfolio", "apurba2509-portfolio.vercel.app"),
 ]
 OPEN_TO_DIR = "~/open-to-discuss"
 OPEN_TO = ["cross-platform-mobile/", "hackathons/", "open-source/"]
@@ -61,6 +62,7 @@ FOOTER_TITLE = "Thanks for stopping by"
 FOOTER_LINE = "let's build something from 0 → 1"
 
 SOCIALS = [  # (file name, platform, handle) — the link URLs live in README.md
+    ("portfolio", "PORTFOLIO", "view my work"),
     ("linkedin", "LINKEDIN", "apurbadas2509"),
     ("instagram", "INSTAGRAM", "@___apurbax___"),
     ("github", "GITHUB", "@Apurba2509"),
@@ -375,7 +377,9 @@ def build_terminal():
     def Y(line):
         return TOP + 34 + line * LH
 
-    H = round(Y(17) + 26)
+    BLOCKS = 3 + len(NEOFETCH)  # colour-block rows sit right under the info lines
+    LS = BLOCKS + 3             # `ls` prompt, then its output, then the idle prompt
+    H = round(Y(LS + 2) + 26)
     PROMPT = [("~", BLUE, True), (" ❯ ", GREEN, True)]
     prompt_w = sum(len(s[0]) for s in PROMPT) * CW
 
@@ -447,7 +451,7 @@ def build_terminal():
         cols += [[row[c] for row in rows] for c in range(len(rows[0]))]
     art_w, art_h = len(cols) * pitch - (pitch - size), 7 * pitch - (pitch - size)
     art_x = PX + 12
-    art_y = (Y(1) - FS + Y(12) + 24) / 2 - art_h / 2
+    art_y = (Y(1) - FS + Y(BLOCKS) + 24) / 2 - art_h / 2
     info_x = art_x + art_w + 48
 
     defs.append(
@@ -493,21 +497,21 @@ def build_terminal():
     for r, row in enumerate(palette):
         for c, col in enumerate(row):
             cls = tl.show_at(t_out + 0.9 + (r * 8 + c) * 0.035)
-            content.append(f'<rect class="{cls}" x="{info_x + c * 30:.1f}" y="{Y(12) - 12 + r * 18}" '
+            content.append(f'<rect class="{cls}" x="{info_x + c * 30:.1f}" y="{Y(BLOCKS) - 12 + r * 18}" '
                            f'width="30" height="18" fill="{col}"/>')
 
     # 2) ls ~/open-to-discuss
     t_out2 = 5.9
-    command(15, [("ls", TEXT, True), (" " + OPEN_TO_DIR, SUB)], 3.9, 4.4, 0.06, t_out2)
+    command(LS, [("ls", TEXT, True), (" " + OPEN_TO_DIR, SUB)], 3.9, 4.4, 0.06, t_out2)
     listing = []
     for d in OPEN_TO:
         listing += [(d, BLUE, True), ("   ", TEXT)]
-    content.append(f'<g class="{tl.show_at(t_out2)}">{mono(PX, Y(16), listing[:-1], FS)}</g>')
+    content.append(f'<g class="{tl.show_at(t_out2)}">{mono(PX, Y(LS + 1), listing[:-1], FS)}</g>')
 
     # 3) idle prompt with a blinking block cursor
     t_idle = 6.2
-    content.append(f'<g class="{tl.show_at(t_idle)}">{mono(PX, Y(17), PROMPT, FS)}'
-                   f'<rect class="blink" x="{PX + prompt_w:.1f}" y="{Y(17) - FS + 2}" '
+    content.append(f'<g class="{tl.show_at(t_idle)}">{mono(PX, Y(LS + 2), PROMPT, FS)}'
+                   f'<rect class="blink" x="{PX + prompt_w:.1f}" y="{Y(LS + 2) - FS + 2}" '
                    f'width="{CW:.1f}" height="{FS + 3}" fill="{SUB}"/></g>')
 
     fade = tl.anim([(0, "opacity:1"), (T - 1.0, "opacity:1"), (T - 0.35, "opacity:0"), (T, "opacity:0")])
@@ -603,6 +607,10 @@ IG_GRADIENT = (
 
 # Brand glyphs on a 24×24 grid, drawn on an app-icon style tile.
 ICONS = {
+    "portfolio": (  # the portfolio's own logo: a black "A" on taxi yellow
+        "#FFD100",
+        '<path fill="#0A0A09" fill-rule="evenodd" d="M5.25 19.5L10.125 4.5H13.875L18.75 19.5H15.19L14.18 16.13H9.83L8.81 19.5ZM10.73 13.13H13.28L12 8.81Z"/>',
+    ),
     "linkedin": (
         "#0A66C2",
         '<path fill="#fff" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 '

@@ -89,7 +89,7 @@ so it stays comfortably inside the banner.
 
 ### Update the neofetch terminal
 
-Edit `NEOFETCH`, a list of `("Label", "value")` pairs. Values must stay under ~55
+Edit `NEOFETCH`, a list of `("Label", "value")` pairs. Values must stay under ~52
 characters; the script **stops with an error** naming the line if one is too long. Label
 colours cycle through blue, red, yellow, green automatically.
 `OPEN_TO_DIR` / `OPEN_TO` control the `ls` command at the bottom.

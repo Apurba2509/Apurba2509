@@ -2,7 +2,9 @@
 <div align="center">
   <img src="./assets/hero.svg" width="100%" alt="Apurba Das — Full-Stack & Mobile Developer · Cloud & AI Enthusiast · Open-Source Contributor · Tech Community Lead" />
   <p><i>Building seamless cross-platform experiences, scalable cloud solutions, and vibrant tech communities.</i></p>
+  <p><a href="https://apurba2509-portfolio.vercel.app"><b>apurba2509-portfolio.vercel.app</b></a> · projects, journey &amp; contact</p>
   <p>
+    <a href="https://apurba2509-portfolio.vercel.app"><img src="./assets/social/portfolio.svg" height="54" alt="Portfolio: apurba2509-portfolio.vercel.app" /></a>
     <a href="https://www.linkedin.com/in/apurbadas2509/"><img src="./assets/social/linkedin.svg" height="54" alt="LinkedIn: apurbadas2509" /></a>
     <a href="https://www.instagram.com/___apurbax___/"><img src="./assets/social/instagram.svg" height="54" alt="Instagram: @___apurbax___" /></a>
     <a href="https://github.com/Apurba2509?tab=repositories"><img src="./assets/social/github.svg" height="54" alt="GitHub: @Apurba2509" /></a>
