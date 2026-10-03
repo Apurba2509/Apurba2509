@@ -121,7 +121,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <br/>
 
 <!-- DAILY:START (rewritten by .github/workflows/daily-readme.yml — edit quotes in scripts/daily_update.py) -->
-<p align="center"><sub>💬 <i>"Controlling complexity is the essence of computer programming."</i> — Brian Kernighan</sub></p>
+<p align="center"><sub>💬 <i>"First, solve the problem. Then, write the code."</i> — John Johnson</sub></p>
 <!-- DAILY:END -->
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
