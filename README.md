@@ -121,7 +121,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <br/>
 
 <!-- DAILY:START (rewritten by .github/workflows/daily-readme.yml — edit quotes in scripts/daily_update.py) -->
-<p align="center"><sub>💬 <i>"Premature optimization is the root of all evil."</i> — Donald Knuth</sub></p>
+<p align="center"><sub>💬 <i>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."</i> — Martin Fowler</sub></p>
 <!-- DAILY:END -->
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
