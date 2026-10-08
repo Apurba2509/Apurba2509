@@ -121,7 +121,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <br/>
 
 <!-- DAILY:START (rewritten by .github/workflows/daily-readme.yml — edit quotes in scripts/daily_update.py) -->
-<p align="center"><sub>💬 <i>"Truth can only be found in one place: the code."</i> — Robert C. Martin</sub></p>
+<p align="center"><sub>💬 <i>"Premature optimization is the root of all evil."</i> — Donald Knuth</sub></p>
 <!-- DAILY:END -->
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
