@@ -121,7 +121,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <br/>
 
 <!-- DAILY:START (rewritten by .github/workflows/daily-readme.yml — edit quotes in scripts/daily_update.py) -->
-<p align="center"><sub>💬 <i>"Simplicity is prerequisite for reliability."</i> — Edsger W. Dijkstra</sub></p>
+<p align="center"><sub>💬 <i>"Before software can be reusable it first has to be usable."</i> — Ralph Johnson</sub></p>
 <!-- DAILY:END -->
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
