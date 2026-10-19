@@ -121,7 +121,7 @@ I love taking projects from <b>0 → 1</b> — architecting a mobile app, config
 <br/>
 
 <!-- DAILY:START (rewritten by .github/workflows/daily-readme.yml — edit quotes in scripts/daily_update.py) -->
-<p align="center"><sub>💬 <i>"Good design adds value faster than it adds cost."</i> — Thomas C. Gale</sub></p>
+<p align="center"><sub>💬 <i>"Testing leads to failure, and failure leads to understanding."</i> — Burt Rutan</sub></p>
 <!-- DAILY:END -->
 
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something from 0 → 1" />
